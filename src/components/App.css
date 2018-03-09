@@ -12,6 +12,7 @@
   height: 130px;
   padding: 10px;
   color: rgb(40, 214, 92);
+  
 }
 
 .Next, .Preview {
@@ -59,3 +60,4 @@ button {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
