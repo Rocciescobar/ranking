@@ -7,34 +7,6 @@ const songs = [
   { id: 6, song: "canciónF", autor: "autorF", score: 13 }
 ];
 
-currentID: 2;
-
-
-//actions
-
-export const next = () => ({
-  type: "NEXT",
-  icurrentID
-});
-
-export const preview = () => ({ 
-  type: "PREVIEW", 
-  currentID 
-});
-
-export const increase = (id) => ({
-  type: "INCREASE",
-  id
-});
-
-export const decreases = (id) => ({
-  type: "DECREASE",
-  id
-});
-
-export const Play = () => ({
-  currentID
-});
 
 // const newScore = (state = songs, action) => {
 //   switch (action.type) {
@@ -70,4 +42,3 @@ const newScore = (state=songs, action) => {
 
 export default newScore;
 
-// usar map??
