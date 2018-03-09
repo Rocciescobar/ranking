@@ -2,20 +2,22 @@
 action: [
     { 
       type:'NEXT',
-      id: nextId++
+      
     },
 
     { 
       type:'PREVIEW',
-      id: nextId--
+      
      },
 
     { 
-      type:'INCREASE'
+      type:'INCREASE',
+      id
     },
 
     { 
-      type:'DECREASE'
+      type:'DECREASE',
+      id
     },
 
     { 

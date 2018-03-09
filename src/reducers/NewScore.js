@@ -20,6 +20,18 @@ const songs = [
 //     // cómo hacer que sea el state del id indicado?
 //   }
 // };
+// const songs = [
+//   { id: 1, song: "canciónA", autor: "autorA", score: 30 },
+// ]
+// + 
+
+// {type = "Increase", id:1}
+
+// =
+
+// const songs = [
+//   { id: 1, song: "canciónA", autor: "autorA", score: 31 },
+// ]
 
 const newScore = (state=songs, action) => {
   switch (action.type) {

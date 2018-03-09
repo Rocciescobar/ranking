@@ -2,9 +2,9 @@ import { combineReducers } from "redux";
 // import todos from "./todos";
 // import visibilityFilter from "./visibilityFilter";
 
-const ranking = combineReducers({
-  score,
-  show
+const Ranking = combineReducers({
+  newScore,
+  ChangeSong
 });
 
-export default ranking;
+export default Ranking;
