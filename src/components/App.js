@@ -15,7 +15,7 @@ const songs= [
 ];
 
 const App = () => (
-  <div className="App Center">
+  <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo"/>
       <h1 className="App-title">Ranking Music</h1>
@@ -32,13 +32,13 @@ const App = () => (
         <button><img src={preview}/></button>
       </div>
     </div>
-    <ul style={{padding: 0}}>
+    <ul style={{padding: 0, border:'solid black', borderWidth:'1px 1px 0 1px', width: '60%', margin: '0 auto 20px'}}>
       {songs.map(({ id, song, score }) =>
         <li
           key={id}
-          style={{ listStyleType: 'none', border:'2px solid black', margin: '0 auto 2px', width: '60%', padding: '5px'}}
+          style={{ listStyleType: 'none', borderBottom:'1px solid black', padding: '7px'}}
         >
-          <span style={{ marginLeft: '2px', width: '75%', display: 'inline-grid' }}>{song}</span>
+          <span style={{ marginLeft: '10px', width: '75%', display: 'inline-grid' }}>{song}</span>
           <span style={{ width: '10%', display: 'inline-grid', textAlign:'center' }}>{score}</span>
           <button style={{marginRight: '2px'}}>
             <b>-</b>
