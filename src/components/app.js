@@ -1,7 +1,11 @@
-// state 
+import React from 'react'
+import logo from '../logo.png'
+// import next from '../lef.png'
+import './App.css'
+
 
 {
-  songs: [
+  const songs= [
     {
       id: 1,
       song: 'canciónA',
@@ -41,3 +45,19 @@
   ];
   currentID: 2
 }
+
+const App = () => (
+  <div>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">Ranking Music</h1>
+      </header>
+    </div>
+    <div className="reproducer">
+
+    </div>
+  </div>
+)
+
+export default App
