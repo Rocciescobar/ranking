@@ -36,18 +36,37 @@ export const Play = () => ({
   currentID
 });
 
-const newScore = (state = songs, action) => {
+// const newScore = (state = songs, action) => {
+//   switch (action.type) {
+//     case "INCREASE":
+//       state.score == state.score + 1;
+//       return state;
+//     // cómo hacer que sea el state del id indicado?
+//     case "DECREASE":
+//       state.score == state.score - 1;
+//       return state;
+//     // cómo hacer que sea el state del id indicado?
+//   }
+// };
+
+const newScore = (state=songs, action) => {
   switch (action.type) {
     case "INCREASE":
-      state.score == state.score + 1;
-      return state;
-    // cómo hacer que sea el state del id indicado?
+      return state.map(song => {
+        if (song.id === action.id) {
+          song.core = song.score + 1
+          return song;
+        }
+      });
     case "DECREASE":
-      state.score == state.score - 1;
-      return state;
-    // cómo hacer que sea el state del id indicado?
+      return state.map(song => {
+        if (song.id === action.id) {
+          song.scroe = song.score - 1
+          return song;
+        }
+      });
   }
-};
+}
 
 export default newScore;
 
