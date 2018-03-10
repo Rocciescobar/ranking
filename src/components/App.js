@@ -1,7 +1,7 @@
 import React from 'react'
-import logo from '../logo.png'
 import next from '../lef.png'
 import preview from '../rigth.png'
+import Header from './Header'
 import './App.css'
 
 
@@ -16,10 +16,7 @@ const songs= [
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo"/>
-      <h1 className="App-title">Ranking Music</h1>
-    </header>
+    <Header />
     <div className="Play">
       <div className="Inline Next">
         <button><img src={next}/></button>
