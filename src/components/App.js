@@ -1,7 +1,6 @@
 import React from 'react'
-import next from '../lef.png'
-import preview from '../rigth.png'
 import Header from './Header'
+import PlaySong from './PlaySong'
 import './App.css'
 
 
@@ -17,18 +16,7 @@ const songs= [
 const App = () => (
   <div className="App">
     <Header />
-    <div className="Play">
-      <div className="Inline Next">
-        <button><img src={next}/></button>
-      </div>
-      <div className="Reproducer Inline"> 
-        <h2>Title</h2>
-        <p>Autor</p>
-      </div>
-      <div className="Inline Preview">
-        <button><img src={preview}/></button>
-      </div>
-    </div>
+    <PlaySong />
     <ul style={{padding: 0, border:'solid black', borderWidth:'1px 1px 0 1px', width: '60%', margin: '0 auto 20px'}}>
       {songs.map(({ id, song, score }) =>
         <li
