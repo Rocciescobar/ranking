@@ -22,7 +22,6 @@ action: [
 
     { 
       type:'PLAY',
-      id: 2
     }
 ]
 
