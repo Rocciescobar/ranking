@@ -5,7 +5,7 @@ import './App.css'
 const Header = () => (
   <div>
     <header className="App-header">
-      <img src={logo} className="App-logo"/>
+      <img src={logo} className="App-logo" alt='logo'/>
       <h1 className="App-title">Ranking Music</h1>
     </header>
   </div>
