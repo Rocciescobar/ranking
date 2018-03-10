@@ -3,7 +3,6 @@ import React from 'react'
 
 const Song = ({song, score}) => (
   <li
-  // key={id}
   style={{ listStyleType: 'none', borderBottom:'1px solid black', padding: '7px'}}
   >
     <span style={{ marginLeft: '10px', width: '75%', display: 'inline-grid' }}>{song}</span>

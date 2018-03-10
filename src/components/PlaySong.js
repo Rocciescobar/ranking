@@ -5,12 +5,12 @@ import './App.css'
 
 const PlaySong = () => (
   <div className="Play">
-    <a className="Inline Next"><img src={next}/></a>
+    <a className="Inline Next"><img src={next} alt='arrow left'/></a>
     <div className="Reproducer Inline"> 
       <h2>Title</h2>
       <p>Autor</p>
     </div>
-    <a className="Inline Next"><img src={preview}/></a>
+    <a className="Inline Next"><img src={preview} alt='arrow rigth'/></a>
   </div>
 )
 
