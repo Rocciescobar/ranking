@@ -11,19 +11,19 @@
   text-align: center;
 }
 
-.Next, .Preview {
+.Next{
   width: 18%;
   margin-top: 20%;
 }
 
-button {
+a {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .Reproducer {
-  height:30vh;
+  height:25vh;
   width: 60%;
 }
 
