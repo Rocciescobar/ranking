@@ -3,14 +3,14 @@ import next from '../lef.png'
 import preview from '../rigth.png'
 import './App.css'
 
-const PlaySong = () => (
+const PlaySong = ({onClick}) => (
   <div className="Play">
-    <a className="Inline Next"><img src={next}/></a>
+    <span onClick={onClick} className="Inline Next"><img src={next}/></span>
     <div className="Reproducer Inline"> 
       <h2>Title</h2>
       <p>Autor</p>
     </div>
-    <a className="Inline Next"><img src={preview}/></a>
+    <span onClick={onClick} className="Inline Next"><img src={preview}/></span>
   </div>
 )
 
